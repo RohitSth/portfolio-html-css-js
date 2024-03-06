@@ -5,3 +5,9 @@ const toggleMenu = () => {
   menu.classList.toggle("open"); //toggle the class open
   icon.classList.toggle("open"); //toggle the class open
 };
+
+const darkModeToggle = document.getElementById("dark-mode-icon");
+
+darkModeToggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark-mode");
+});
