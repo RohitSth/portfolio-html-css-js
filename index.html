@@ -14,8 +14,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="light-mode">
-
+<body class="dark-mode">
   <!-- Nav -->
   <nav class="navbar navbar-expand-sm fixed-top" style="background-color: rgba(21, 39, 74, 0.7);">
     <div class="container d-flex align-items-center justify-content-between">
@@ -47,8 +46,8 @@
 
   <!-- Hero -->
   <div class="d-flex min-vh-100" lc-helper="background"
-    style="background:url('/assets/wave.png')  center / cover no-repeat; background-color:#444; background-blend-mode: overlay;">
-    <div class="align-self-center text-center text-light col-md-8 offset-md-2">
+    style="background:url('/assets/dark-keyboard.png')  center / cover no-repeat; background-color:#444; background-blend-mode: overlay;">
+    <div class="hero-div align-self-center text-center text-light col-md-8 offset-md-2">
       <div class="lc-block">
         <div>
           <h2>Hello, I am</h2>
@@ -61,10 +60,10 @@
         </div>
 
         <div>
-          <button type="button" class="btn btn-outline-light" onclick="window.open('./assets/resume.pdf')">
+          <button type="button" class="hero-btn btn btn-outline-light" onclick="window.open('./assets/resume.pdf')">
             Download CV
           </button>
-          <button type="button" class="btn btn-outline-light" onclick="location.href='./#contact'">
+          <button type="button" class="hero-btn btn btn-outline-light" onclick="location.href='./#contact'">
             Contact Info
           </button>
         </div>
@@ -217,43 +216,32 @@
     <h1 class="title">Projects</h1>
     <div class="row">
       <div class="col-md-4 mb-4">
-        <div class="card text-bg-dark">
-          <img src="./assets/Project1.png" class="card-img" alt="img of project">
+        <div class="card text-bg-dark"
+          onclick="location.href='https://github.com/RohitSth/django-social-media-project'">
+          <img src="./assets/ProjectOne.png" class="card-img" alt="img of project">
           <div class="card-img-overlay">
             <h5 class="card-title">CarBook</h5>
             <p class="card-text">This is a social media app created using Django framework.</p>
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/RohitSth/django-social-media-project'">
-              Github
-            </button>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
-        <div class="card text-bg-dark">
-          <img src="./assets/Project2.png" class="card-img" alt="img of project">
+        <div class="card text-bg-dark" onclick="location.href='https://github.com/RohitSth/projectofweb'">
+          <img src="./assets/ProjectTwo.png" class="card-img" alt="img of project">
           <div class="card-img-overlay">
             <h5 class="card-title">Project Two</h5>
             <p class="card-text">This is a simple todo list web app with authentication made using Node.js and Express.
             </p>
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/RohitSth/projectofweb'">
-              Github
-            </button>
           </div>
         </div>
       </div>
       <div class="col-md-4 mb-4">
-        <div class="card text-bg-dark">
-          <img src="./assets/Project3.png" class="card-img" alt="img of project">
+        <div class="card text-bg-dark" onclick="location.href='https://github.com/RohitSth/dsa_project'">
+          <img src="./assets/ProjectThree.png" class="card-img" alt="img of project">
           <div class="card-img-overlay">
             <h5 class="card-title">Project Three</h5>
             <p class="card-text">This is a web app for sorting the numbers provided by the users by implementing various
               sorting algorithms.</p>
-            <button class="btn btn-color-2 project-btn"
-              onclick="location.href='https://github.com/RohitSth/dsa_project'">
-              Github
-            </button>
           </div>
         </div>
       </div>

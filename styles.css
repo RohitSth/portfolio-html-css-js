@@ -1,26 +1,31 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
+/* Reset styles */
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
+/* Root variables */
 :root {
   --background-color: rgb(212, 234, 255);
   --text-color: black;
   --link-color: rgb(56, 170, 190);
 }
 
+/* Dark mode */
 body.dark-mode {
   --background-color: #15152f;
   --text-color: white;
-  --link-color: rgb(56, 170, 190);
 }
 
+/* Global styles */
 body {
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: "Poppins", sans-serif;
+  transition: background-color 0.3s, color 0.3s;
 }
 
 html {
@@ -31,6 +36,105 @@ p {
   color: var(--link-color);
 }
 
+/* Navbar */
+nav,
+.nav-link {
+  display: flex;
+  color: aliceblue;
+}
+
+.nav-link {
+  transition: transform 0.3s;
+}
+
+.nav-link:hover {
+  color: rgb(56, 170, 190);
+  transform: scale(1.1);
+}
+
+nav {
+  justify-content: space-around;
+  align-items: center;
+  height: 17vh; /* 17% of the viewport height */
+}
+
+/* Links */
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(56, 170, 190);
+  text-decoration: underline;
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(56, 170, 190);
+}
+
+/* Hero */
+.hero-div {
+  padding: 4rem;
+}
+
+.hero-btn {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+  border-radius: 2rem;
+  margin-left: 4px;
+  margin-right: 4px;
+  padding: 0.7rem 2rem;
+  transition: transform 0.3s;
+}
+
+.hero-btn:hover {
+  transform: scale(1.1);
+  background-color: rgb(56, 170, 190);
+  color: rgb(0, 0, 0);
+}
+
+h2,
+.display-1 {
+  transition: transform 0.3s;
+}
+
+h2:hover,
+.display-1:hover {
+  transform: scale(1.1);
+  color: rgb(56, 170, 190);
+}
+
+/* Icons */
+
+.icon {
+  cursor: pointer;
+  height: 3rem;
+  transition: filter 0.3s; /* Transition for the filter property for smoother effect */
+  margin-left: 4px;
+  margin-right: 4px;
+  transition: transform 0.3s;
+}
+
+.icon:hover {
+  filter: drop-shadow(
+    0 0 5px rgba(56, 170, 190, 0.7)
+  ); /* Apply a drop-shadow effect */
+  transform: scale(1.1);
+}
+
+/* Contack Info */
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.contact-icon {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+}
+
+/* Card hover effect */
 .custom-card {
   height: 100%;
   margin: 1rem;
@@ -44,55 +148,14 @@ p {
   transform: scale(1.1);
 }
 
-/* Transition */
-
-a,
-.btn {
-  transition: all 300ms ease; /* Transition for the links and buttons */
-}
-
-/* Navbar */
-
-nav,
-.nav-link {
-  display: flex;
-  color: aliceblue;
-}
-
-nav {
-  justify-content: space-around;
-  align-items: center;
-  height: 17vh; /* 17% of the viewport height */
-}
-
+/* NavLinks */
 .nav-links {
   gap: 2rem; /* Space between the links */
   list-style: none; /* Remove the bullet points */
   font-size: 1.3rem;
 }
 
-a {
-  color: var(--link-color);
-  text-decoration: none;
-  text-decoration-color: whitesmoke;
-}
-
-a:hover {
-  color: rgb(56, 170, 190);
-  text-decoration: underline;
-  text-underline-offset: 1rem;
-  text-decoration-color: rgb(56, 170, 190);
-}
-
-.logo {
-  font-size: 1.7rem;
-}
-
-.logo:hover {
-  color: rgb(56, 170, 190);
-  cursor: default;
-}
-
+/* Dark mode icon */
 #dark-mode-icon {
   width: 26px;
   cursor: pointer;
@@ -105,37 +168,25 @@ a:hover {
   ); /* Apply a drop-shadow effect */
 }
 
+/*For h1 title*/
 .title {
   font-size: 3rem;
   text-align: center;
+  transition: transform 0.3s;
 }
 
-/* Icons */
-
-.icon {
-  cursor: pointer;
-  height: 2rem;
-  transition: filter 0.3s; /* Transition for the filter property for smoother effect */
+.title:hover {
+  color: rgb(56, 170, 190);
+  transform: scale(1.1);
 }
 
-.contact-info {
-  display: flex;
-  align-items: center;
-  margin-bottom: 10px;
+/* Transition */
+a,
+.btn {
+  transition: all 300ms ease; /* Transition for the links and buttons */
 }
 
-.contact-icon {
-  width: 20px; /* Adjust the size as needed */
-  height: 20px; /* Adjust the size as needed */
-  margin-right: 10px;
-}
-
-.icon:hover {
-  filter: drop-shadow(
-    0 0 5px rgba(56, 170, 190, 0.7)
-  ); /* Apply a drop-shadow effect */
-}
-
+/* Footer */
 .gg-frame {
   border: none;
   width: 100%;
