@@ -119,6 +119,7 @@ h2:hover,
   color: var(--text-color);
   background-color: var(--background-color);
   border-radius: 2rem;
+  font-size: 1.6rem;
 }
 
 /* Icons */
