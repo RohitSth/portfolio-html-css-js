@@ -43,6 +43,11 @@ nav,
   color: aliceblue;
 }
 
+.navclass {
+  display: flex;
+  justify-content: right;
+}
+
 .nav-link {
   transition: transform 0.3s;
 }
@@ -73,7 +78,8 @@ a:hover {
 
 /* Hero */
 .hero-div {
-  padding: 4rem;
+  display: flex;
+  justify-content: center;
 }
 
 .hero-btn {
@@ -93,7 +99,7 @@ a:hover {
 }
 
 .lc-block {
-  margin-top: 10rem;
+  margin-top: 26rem;
 }
 
 h2,
@@ -112,6 +118,7 @@ h2:hover,
 .about-div {
   color: var(--text-color);
   background-color: var(--background-color);
+  border-radius: 2rem;
 }
 
 /* Icons */
@@ -133,6 +140,11 @@ h2:hover,
 }
 
 /* Skills */
+.skill-main-div {
+  display: flex;
+  justify-content: center;
+}
+
 .skill-div {
   transition: transform 0.3s;
   cursor: default;
@@ -180,10 +192,19 @@ h2:hover,
 }
 
 /* NavLinks */
-.nav-links {
+.logo {
+  font-size: 2rem;
+  transition: transform 0.3s;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+.nav-link {
   gap: 2rem; /* Space between the links */
   list-style: none; /* Remove the bullet points */
-  font-size: 1.3rem;
+  font-size: 1.5rem;
 }
 
 /* Dark mode icon */
