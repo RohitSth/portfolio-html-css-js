@@ -132,6 +132,26 @@ h2:hover,
   transform: scale(1.1);
 }
 
+/* Skills */
+.skill-div {
+  transition: transform 0.3s;
+  cursor: default;
+}
+
+.skill-div:hover {
+  transform: scale(1.1);
+}
+
+.skill-h3 {
+  transition: transform 0.3s;
+}
+
+.skill-h3:hover {
+  color: rgb(56, 170, 190);
+  transform: scale(0.9);
+  text-shadow: 0 0 12px rgba(56, 170, 190, 0.8);
+}
+
 /* Contact Info */
 .contact-info {
   display: flex;
@@ -189,6 +209,7 @@ h2:hover,
 .title:hover {
   color: rgb(56, 170, 190);
   transform: scale(1.1);
+  text-shadow: 0 0 12px rgba(6, 61, 179, 0.8);
 }
 
 /* Transition */
