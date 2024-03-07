@@ -92,6 +92,10 @@ a:hover {
   color: rgb(0, 0, 0);
 }
 
+.lc-block {
+  margin-top: 10rem;
+}
+
 h2,
 .display-1 {
   transition: transform 0.3s;
@@ -101,6 +105,13 @@ h2:hover,
 .display-1:hover {
   transform: scale(1.1);
   color: rgb(56, 170, 190);
+  text-shadow: 0 0 12px rgba(56, 170, 190, 0.8);
+}
+
+/* About */
+.about-div {
+  color: var(--text-color);
+  background-color: var(--background-color);
 }
 
 /* Icons */
@@ -121,7 +132,7 @@ h2:hover,
   transform: scale(1.1);
 }
 
-/* Contack Info */
+/* Contact Info */
 .contact-info {
   display: flex;
   align-items: center;
