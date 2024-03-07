@@ -254,3 +254,60 @@ footer {
 footer p {
   text-align: center;
 }
+
+/* Project Cards */
+.project-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  height: 400px; /* Set a fixed height for the cards */
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+}
+
+.project-card .card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.project-card .card-img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 1rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 0 0 10px 10px;
+}
+
+.project-card .card-title {
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.project-card .card-text {
+  color: white;
+  font-size: 1rem;
+}
+
+.project-card .hero-btn {
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(56, 170, 190);
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.project-card .hero-btn:hover {
+  transform: scale(1.05);
+}
