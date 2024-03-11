@@ -11,13 +11,14 @@
 :root {
   --background-color: rgb(212, 234, 255);
   --text-color: black;
-  --link-color: rgb(56, 170, 190);
+  --link-color: rgb(0, 0, 0);
 }
 
 /* Dark mode */
 body.dark-mode {
   --background-color: #15152f;
   --text-color: white;
+  --link-color: rgb(255, 255, 255);
 }
 
 /* Global styles */
@@ -50,6 +51,8 @@ nav,
 
 .nav-link {
   transition: transform 0.3s;
+  margin-left: 14px;
+  margin-right: 14px;
 }
 
 .nav-link:hover {
@@ -160,9 +163,14 @@ h2:hover,
 }
 
 .skill-h3:hover {
-  color: rgb(56, 170, 190);
+  color: var(--link-color);
   transform: scale(0.9);
   text-shadow: 0 0 12px rgba(56, 170, 190, 0.8);
+}
+
+.skills-icon {
+  width: 80px;
+  height: 80px;
 }
 
 /* Card hover effect */
@@ -218,7 +226,6 @@ h2:hover,
 .title:hover {
   color: rgb(56, 170, 190);
   transform: scale(1.1);
-  text-shadow: 0 0 12px rgba(6, 61, 179, 0.8);
 }
 
 /* Transition */
@@ -320,8 +327,10 @@ a,
 
 .gg-frame {
   border: none;
-  width: 100%;
+  width: 80%;
   height: 350px;
+  border-radius: 1rem;
+  margin: 1rem;
 }
 
 /* Footer */
@@ -335,6 +344,7 @@ footer p {
 }
 
 .paragragh {
+  font-size: 17px;
   transition: transform 0.3s;
 }
 
